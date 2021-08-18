@@ -37,8 +37,22 @@ header {
     color: #ffffff;
 }
 header .logo {
+    display: block;
+    position: absolute;
+    top: 10px;
+}
+header .logo #logo_svg {
+    display: inline-block;
+    width: 100px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+header .logo p {
+    display: inline-block;
     font-size: 44px;
     line-height: 1.0em;
+    vertical-align: middle;
 }
 header .tab_menu {
     display: block;
@@ -51,6 +65,8 @@ header .tab_menu li {
     display: inline-block;
     margin-right: 20px;
     cursor: pointer;
+    font-size: 18px;
+    line-height: 1.3em;
 }
 header .tab_menu li:last-of-type {
     margin-right: 0;
@@ -152,18 +168,12 @@ header .toggle_btn span:nth-child(3) {
 .today_time, .today_ticket, .today_schedule {
     height: 200px;
 }
-/*
-.today_time span, .today_ticket span, .today_schedule span {
-    display: block;
-    width: calc(100% - 30px);
-    height: 2px;
-    background: #03459D;
-    border-radius: 1px;
-}
-*/
 .today_time, .today_ticket {
     width: calc((100% + 60px)/4);
 }
 .today_schedule {
-    width: calc((100% + 60px)/2 - 30px);
+    width: calc((100% + 60px)/2);
+}
+.today_schedule span {
+    width: 100%;
 }
