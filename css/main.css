@@ -10,3 +10,12 @@
   clear: both;
   display: block;
 }
+
+header {
+    display: block;
+    position: sticky;
+}
+
+.global_menu {
+    display: none;
+}
