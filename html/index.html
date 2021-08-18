@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Style -->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
 
     <title>Title</title>
 </head>
@@ -25,9 +28,19 @@
 
             <!-- tab menu -->
             <ul class="tab_menu">
-                <li id="language" class="eng" >language<span class="tri_btn"></span></li>
-                <li id="ticket">チケット購入</li>
-                <li id="access">アクセス</li>
+                <li id="language" class="eng" >
+                    <i class="fas fa-globe"></i>language<i id="lang_btn" class="fas fa-caret-down"></i>
+                    <!-- lang menu -->
+                    <ul class="lang_menu">
+                        <li><a href=""><img src="../img/svg/flag/ja.svg"/><p>日本語</p></a></li>
+                        <li><a href=""><img src="../img/svg/flag/en.svg"/><p>英語</p></a></li>
+                        <li><a href=""><img src="../img/svg/flag/zh.svg"/><p>中国語</p></a></li>
+                        <li><a href=""><img src="../img/svg/flag/ko.svg"/><p>韓国語</p></a></li>
+                    </ul>
+                    <!-- //lang menu -->
+                </li>
+                <li id="ticket"><i class="fas fa-ticket-alt"></i>チケット購入</li>
+                <li id="access"><i class="fas fa-map-marker-alt"></i>アクセス</li>
             </ul>
             <!-- //tab menu -->
 
@@ -118,19 +131,19 @@
         <div class="today">
             <div class="wide_inner">
                 <div class="today_time">
-                    <h1><i class=""></i>本日の営業時間</h1>
+                    <h1><i class="fas fa-clock"></i>本日の営業時間</h1>
                     <span></span>
                     <p>9:00 〜 18:00</p>
                 </div>
                 <div class="today_ticket">
-                    <h1><i class=""></i>チケット情報</h1>
+                    <h1><i class="fas fa-ticket-alt"></i>チケット情報</h1>
                     <span></span>
-                    <p>当日券を購入する</p>
+                    <a href="#">当日券を購入する<i class="fas fa-chevron-right"></i></a>
                 </div>
                 <div class="today_schedule">
-                <h1><i class=""></i>本日のプログラム</h1>
+                <h1><i class="fas fa-list-ul"></i>本日のプログラム</h1>
                     <span></span>
-                    <p>19:00〜イルカショー</p>
+                    <a href="#">19:00〜イルカショー<i class="fas fa-chevron-right"></i></a>
                 </div>
             </div>
         </div>

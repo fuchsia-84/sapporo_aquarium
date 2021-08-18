@@ -64,13 +64,66 @@ header .tab_menu {
 header .tab_menu li {
     display: inline-block;
     margin-right: 20px;
+    margin-bottom: 1px;
     cursor: pointer;
     font-size: 18px;
     line-height: 1.3em;
+    vertical-align: top;
+}
+header .tab_menu li:first-of-type {
+    cursor: default;
 }
 header .tab_menu li:last-of-type {
     margin-right: 0;
 }
+header .tab_menu li i {
+    margin-right: 5px;
+    text-align: center;
+}
+header .tab_menu li:first-of-type i#lang_btn {
+    cursor: pointer;
+    width: 24px;
+}
+
+header .lang_menu {
+    display: none; /*tri_btnクリックで切替*/
+    /*display: block;*/
+    list-style: none;
+    margin-top: 10px;
+}
+header .lang_menu li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.0em;
+    margin: 0;
+    vertical-align: top;
+}
+header .lang_menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+header .lang_menu li img {
+    display: inline-block;
+    height: 12px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+header .lang_menu li p {
+    display: inline-block;
+    vertical-align: top;
+}
+header .lang_menu li::after{
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 12px;
+    margin: 0 10px;
+    border-radius: 1px;
+    background-color: #ffffff;
+    vertical-align: top;
+}
+
 header .toggle_btn {
     display: block;
     width: 50px;
@@ -135,6 +188,7 @@ header .toggle_btn span:nth-child(3) {
 
 /* top - today */
 .today {
+    display: block;
     width: 100%;
     height: 200px;
     background-color: rgb(184, 234, 247, 0.6);
@@ -145,9 +199,28 @@ header .toggle_btn span:nth-child(3) {
     line-height: 1.0em;
 }
 .today h1 {
+    display: block;
     font-weight: 600;
     margin-top: 24px;
     margin-bottom: 29px;
+    margin-left: 30px;
+}
+.today h1 i {
+    margin-right: 10px;
+}
+.today p, .today a {
+    margin-left: 50px;
+}
+.today a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+.today a:hover{
+    color: #ffffff; /*todo fix*/
+}
+.today a i {
+    margin-left: 12px;
 }
 .today span {
     display: block;
