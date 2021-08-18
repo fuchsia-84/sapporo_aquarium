@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url(../css/html5reset-1.6.1.css); /*reset css*/
 
+/* global */
 .inner {
   width: 100%;
   margin: auto;
@@ -10,12 +11,159 @@
   clear: both;
   display: block;
 }
+.wide_inner {
+    width: calc(100% - 60px);
+    padding: 0 30px;
+}
+.eng {
+    font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
 
+
+body {
+    font-family: 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+    font-weight: 600;
+}
+
+/* header */
 header {
     display: block;
+    width: 100%;
+    height: 120px;
+    background: transparent;
     position: sticky;
+    top: 80px;
+    z-index: 100;
+    color: #ffffff;
+}
+header .logo {
+    font-size: 44px;
+    line-height: 1.0em;
+}
+header .tab_menu {
+    display: block;
+    position: absolute;
+    right: 130px;
+    bottom: 10px;
+    list-style-type: none;
+}
+header .tab_menu li {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+header .tab_menu li:last-of-type {
+    margin-right: 0;
+}
+header .toggle_btn {
+    display: block;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
+}
+header .toggle_btn span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 0.5em;
+}
+header .toggle_btn span:nth-child(1) {
+    top: 0px;
+}
+header .toggle_btn span:nth-child(2) {
+    top: 18px;
+}
+header .toggle_btn span:nth-child(3) {
+    top: 36px;
 }
 
 .global_menu {
     display: none;
+}
+
+/* top */
+.top {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin-top: -120px;
+    background-image: url(../img/top.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.top .top_title {
+    display: block;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 250px);
+    text-align: center;
+    color: #ffffff;
+}
+.top .top_title p {
+    font-size: 24px;
+    line-height: 1.83em;
+}
+.top .top_title h1 {
+    font-size: 70px;
+    line-height: 1.43em;
+}
+
+/* top - today */
+.today {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(184, 234, 247, 0.6);
+    position: absolute;
+    bottom: 0;
+    color: #03459D;
+    font-size: 24px;
+    line-height: 1.0em;
+}
+.today h1 {
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 29px;
+}
+.today span {
+    display: block;
+    width: calc(100% - 30px);
+    height: 2px;
+    background: #03459D;
+    border-radius: 1px;
+    margin-bottom: 24px;
+}
+.today .wide_inner {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row no-wrap;
+}
+.today_time, .today_ticket, .today_schedule {
+    height: 200px;
+}
+/*
+.today_time span, .today_ticket span, .today_schedule span {
+    display: block;
+    width: calc(100% - 30px);
+    height: 2px;
+    background: #03459D;
+    border-radius: 1px;
+}
+*/
+.today_time, .today_ticket {
+    width: calc((100% + 60px)/4);
+}
+.today_schedule {
+    width: calc((100% + 60px)/2 - 30px);
 }
