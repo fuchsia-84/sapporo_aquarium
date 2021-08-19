@@ -141,14 +141,14 @@ header .lang_menu li a {
     text-decoration: none;
     color: inherit;
 }
-header .lang_menu li img {
+header .lang_menu li p {
+    display: inline-block;
+    vertical-align: top;
+}
+header .lang_menu li p span {
     display: inline-block;
     height: 12px;
     margin-right: 5px;
-    vertical-align: top;
-}
-header .lang_menu li p {
-    display: inline-block;
     vertical-align: top;
 }
 header .lang_menu li::after {
