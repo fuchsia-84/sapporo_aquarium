@@ -3,8 +3,10 @@
 
 /* global */
 .inner {
-  width: 100%;
-  margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 .inner:after {
   content: "";
@@ -18,11 +20,27 @@
 .eng {
     font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
-
+.section_title {
+    display: block;
+    color: #707070;
+    text-align: center;
+    margin: 80px auto 100px;
+}
+.section_title i {
+    display: block;
+    margin: 0 auto 50px;
+    font-size: 44px;
+    line-height: 1.0em;
+}
+.section_title h1 {
+    font-size: 36px;
+    line-height: 1.33em;
+}
 
 body {
     font-family: 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
     font-weight: 600;
+    color: #333333;
 }
 
 /* header */
@@ -250,3 +268,64 @@ header .toggle_btn span:nth-child(3) {
 .today_schedule span {
     width: 100%;
 }
+
+/* Recommend */
+.recommend {
+    background-color:#ffffff;
+}
+.recommend .inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.recommend .recommend_contents {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row no-wrap;
+}
+.recommend .recommend_item {
+    width: 33.3%;
+    text-align: center;
+}
+.recommend .recommend_item img, .recommend .recommend_item div {
+    display: block;
+    width: calc(100% - 41px);
+    max-width: 300px;
+}
+.recommend .recommend_item img {
+    max-height: 200px;
+    min-height: 180px;
+    border-radius: 30px;
+}
+.recommend_item:nth-child(2) img, .recommend_item:nth-child(2) div {
+    margin: 0 auto;
+}
+.recommend_item:nth-child(3) img, .recommend_item:nth-child(3) div {
+    margin: 0 0 0 auto;
+}
+.recommend .recommend_item div {
+    margin-top: 10px;
+}
+.recommend .recommend_item div h1 {
+    font-size: 18px;
+    line-height: 1.33em;
+    font-weight: 300;
+}
+.recommend .recommend_item div h1::after {
+    content: '';
+    display: inline-block;
+    background-image : radial-gradient(circle farthest-side, #119898, #119898 33.3%, transparent 33.3%, transparent);
+    background-size: 12px 12px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 12px;
+}
+.recommend .recommend_item div h2 {
+    font-size: 24px;
+    line-height: 1.5em;
+    margin-top: 8px;
+}
+
