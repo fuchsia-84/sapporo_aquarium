@@ -106,8 +106,9 @@ header .tab_menu li {
     line-height: 1.3em;
     vertical-align: top;
 }
-header .tab_menu li:first-of-type {
+header .tab_menu li#language {
     cursor: default;
+    /*margin-right: -129px;*/   /*tri_btnクリックで切替*/
 }
 header .tab_menu li:last-of-type {
     margin-right: 0;
@@ -119,10 +120,11 @@ header .tab_menu li i {
 header .tab_menu li:first-of-type i#lang_btn {
     cursor: pointer;
     width: 24px;
+    /*transform: rotate(180deg);*/  /*tri_btnクリックで切替*/
 }
 
 header .lang_menu {
-    display: none; /*tri_btnクリックで切替*/
+    display: none;  /*tri_btnクリックで切替*/
     /*display: block;*/
     list-style: none;
     margin-top: 10px;
@@ -149,7 +151,7 @@ header .lang_menu li p {
     display: inline-block;
     vertical-align: top;
 }
-header .lang_menu li::after{
+header .lang_menu li::after {
     content: '';
     display: inline-block;
     width: 2px;
@@ -158,6 +160,9 @@ header .lang_menu li::after{
     border-radius: 1px;
     background-color: #ffffff;
     vertical-align: top;
+}
+header .lang_menu li:last-child::after {
+    display: none;
 }
 
 header .toggle_btn {
