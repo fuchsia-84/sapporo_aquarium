@@ -58,6 +58,7 @@ body {
     font-family: 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
     font-weight: 600;
     color: #333333;
+    min-width: 1200px; /* for pc */
 }
 
 /* header */
@@ -312,8 +313,7 @@ header .toggle_btn span:nth-child(3) {
     max-width: 300px;
 }
 .recommend .recommend_item img {
-    max-height: 200px;
-    min-height: 180px;
+    height: 200px;
     border-radius: 30px;
 }
 .recommend_item:nth-child(2) img, .recommend_item:nth-child(2) div {
@@ -366,6 +366,63 @@ header .toggle_btn span:nth-child(3) {
 }
 .model {
     background: #ffffff;
+}
+.model .inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.model .model_contents {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row no-wrap;
+}
+.model .model_item {
+    width: 33.3%;
+    text-align: center;
+}
+.model .model_item img, .model .model_item h1 {
+    display: block;
+    width: calc(100% - 41px);
+    max-width: 300px;
+}
+.model .model_item img {
+    height: 200px;
+    border-radius: 30px;
+}
+.model_item:nth-child(2) img, .model_item:nth-child(2) h1 {
+    margin: 0 auto;
+}
+.model_item:nth-child(3) img, .model_item:nth-child(3) h1 {
+    margin: 0 0 0 auto;
+}
+.model .model_item h1 {
+    margin-top: 9px;
+    font-size: 24px;
+    line-height: 1.0em;
+    font-weight: 600;
+}
+.model .model_item h1::before {
+    content: '';
+    display: inline-block;
+    background-image : radial-gradient(circle farthest-side, #119898, #119898 33.3%, transparent 33.3%, transparent);
+    background-size: 12px 12px;
+    background-position: left -4px;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 12px;
+}
+.model .model_item h1::after {
+    content: '';
+    display: inline-block;
+    background-image : radial-gradient(circle farthest-side, #119898, #119898 33.3%, transparent 33.3%, transparent);
+    background-size: 12px 12px;
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 12px;
 }
 
 /* Info */
