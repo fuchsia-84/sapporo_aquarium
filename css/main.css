@@ -435,6 +435,62 @@ header .toggle_btn span:nth-child(3) {
 .info {
     background: #D1F0F4;
 }
+.info .inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.info .info_contents {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row no-wrap;
+}
+.info .info_item {
+    width: 50%;
+    text-align: center;
+}
+.info .info_item div {
+    display: block;
+    width: calc(100% - 41px);
+    max-width: 480px;
+    height: 300px;
+    border-radius: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-size: cover;
+    position: relative;
+}
+.info .info_item:nth-child(1) div::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 300px;
+    background-color: rgb(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.info_item:nth-child(1) div {
+    background-image: url(../img/info_1.png);
+}
+.info_item:nth-child(2) div {
+    background-image: url(../img/info_2.jpg);
+    margin: 0 0 0 auto;
+}
+.info .info_item div a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.0em;
+    font-weight: 600;
+    position: absolute;
+    bottom: 70px;
+}
+.info .info_item div a:visited {
+    color: inherit;
+}
 
 /* Access */
 .access .wave {
