@@ -486,7 +486,7 @@ header .toggle_btn span:nth-child(3) {
     line-height: 1.0em;
     font-weight: 600;
     position: absolute;
-    bottom: 70px;
+    padding: 206px 0 70px;
 }
 .info .info_item div a:visited {
     color: inherit;
