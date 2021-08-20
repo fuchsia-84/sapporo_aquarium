@@ -716,3 +716,29 @@ header .toggle_btn span:nth-child(3) {
 .charge .group_btn:visited {
     color: #ffffff;
 }
+/* banners */
+.charge .charge_footer {
+    display: block;
+    width: 100%;
+    padding: 50px 0;
+}
+.charge .charge_footer .banners {
+    display: flex;
+}
+.banners .banner_item {
+    width: 33.3%;
+}
+.banners .banner_item a {
+    display: block;
+    width: calc(100% - 41px);
+    max-width: 300px;
+    height: 100px;
+    background: #707070;
+    text-decoration: none;
+}
+.banner_item:nth-child(2) a {
+    margin: 0 auto;
+}
+.banner_item:nth-child(3) a {
+    margin: 0 0 0 auto;
+}
