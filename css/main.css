@@ -122,6 +122,13 @@ header .tab_menu li:first-of-type i#lang_btn {
     width: 24px;
     /*transform: rotate(180deg);*/  /*tri_btnクリックで切替*/
 }
+header .tab_menu li a {
+    text-decoration: none;
+    color: inherit;
+}
+header .tab_menu li a:visited {
+    color: inherit;
+}
 
 header .lang_menu {
     display: none;  /*tri_btnクリックで切替*/
