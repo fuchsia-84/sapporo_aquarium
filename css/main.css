@@ -652,3 +652,67 @@ header .toggle_btn span:nth-child(3) {
 .charge {
     background: #B6DEF7;
 }
+.charge .inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.charge .charge_contents {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.charge .charge_item {
+    width: calc(50% - 50px);
+    background: #ffffff;
+    border-radius: 2.0rem;
+}
+.charge .charge_item:last-of-type {
+    margin: 0 0 0 auto;
+}
+.charge .charge_item h1 {
+    display: block;
+    font-size: 24px;
+    line-height: 1.0em;
+    height: 1.0em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #ffffff;
+    background-color: #26AFD1;
+    border-radius: 2.0rem;
+}
+.charge .charge_item dl {
+    padding: 50px 30px;
+}
+.charge .charge_item dl dt {
+    display: block;
+    float: left;
+    clear: left;
+}
+.charge .charge_item dl::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.charge .charge_item dl dd {
+    float: right;
+    clear: right;
+}
+.charge .group_btn {
+    display: block;
+    width: 400px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.0em;
+    height: 1.0em;
+    padding: 23px 0;
+    margin: 50px auto 0;
+
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #26AFD1;
+    border-radius: 1.0em;
+}
+.charge .group_btn:visited {
+    color: #ffffff;
+}
