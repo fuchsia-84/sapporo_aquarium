@@ -587,6 +587,60 @@ header .toggle_btn span:nth-child(3) {
 .access {
     background: #ffffff;
 }
+.access .inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.access .access_map {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background: #707070;
+}
+.access .access_contents {
+    display: flex;
+    width: 80%;
+    margin: 50px auto;
+    color: #707070;
+}
+.access_contents_l, .access_contents_r {
+    width: 50%;
+}
+.access_contents_l dl {
+    font-size: 24px;
+    line-height: 1.5em;
+    font-weight: 300;
+}
+.access_contents_l dl dd {
+    margin-bottom: 20px;
+}
+.access_contents_r dl {
+    font-size: 18px;
+    line-height: 1.33em;
+}
+.access_contents_r dl dt {
+    color: #26AFD1;
+}
+.access_contents_r dl dt::before {
+    display: inline;
+    content: '●';
+}
+.access_contents_r dl dd {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.access_contents_r dl dd:last-of-type {
+    margin-bottom: 0;
+}
+.access_contents_r a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 15px 21px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #26AFD1;
+    border-radius: 2.0em;
+}
 
 /* Charge */
 .charge .wave {
