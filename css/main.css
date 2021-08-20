@@ -69,13 +69,14 @@ header {
     background: transparent;
     position: sticky;
     top: 80px;
-    z-index: 100;
+    z-index: 1000;
     color: #ffffff;
 }
 header .logo {
     display: block;
     position: absolute;
     top: 10px;
+    z-index: 1001;
 }
 header .logo #logo_svg {
     display: inline-block;
@@ -96,6 +97,7 @@ header .tab_menu {
     right: 130px;
     bottom: 10px;
     list-style-type: none;
+    z-index: 1001;
 }
 header .tab_menu li {
     display: inline-block;
@@ -180,6 +182,7 @@ header .toggle_btn {
     top: 40px;
     right: 30px;
     cursor: pointer;
+    z-index: 1002;
 }
 header .toggle_btn span {
     display: block;
@@ -201,14 +204,16 @@ header .toggle_btn span:nth-child(3) {
 
 /* global menu */
 .global_menu {
-    /*display: none;*/ /* toggle_btnクリックで切替*/
-    display: block;
+    display: none;  /* toggle_btnクリックで切替*/
+    /*display: block;*/
     width: 100%;
     height: 100vh;
     top: -80px;
-    left: 0;
+    /*left: 0;*/
+    left: 100%; /* toggle_btnクリックで切替*/
     background: #0C5772;
     position: absolute;
+    z-index: 100;
 }
 .global_menu .inner {
     position: relative;
