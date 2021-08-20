@@ -56,7 +56,7 @@
 }
 
 body {
-    font-family: 'ヒラギノ角ゴ Pro W6', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+    font-family: 'ヒラギノ角ゴ Pro', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
     font-weight: 600;
     color: #333333;
     min-width: 1200px; /* for pc */
