@@ -742,3 +742,71 @@ header .toggle_btn span:nth-child(3) {
 .banner_item:nth-child(3) a {
     margin: 0 0 0 auto;
 }
+
+/* footer */
+footer {
+    display: block;
+    width: 100%;
+    background: #0C5772;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.0em;
+}
+footer .inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+footer div {
+    display: flex;
+    width: calc(100% - 3.0em);
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.footer_l {
+    width: 40%;
+    min-width: 360px;
+}
+.footer_r {
+    width: 60%;
+    min-width: 555px;
+}
+.footer_l dt, .footer_r dt {
+    margin-bottom: 8px;
+ }
+.footer_l dd, .footer_r dd {
+   margin-bottom: 40px;
+}
+
+footer ul {
+    display: block;
+    text-align: center;
+    list-style: none;
+    font-weight: 300;
+}
+footer ul li {
+    display: inline-block;
+    margin-left: 8px;
+}
+footer ul li::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 1.0em;
+    margin-left: 14px;
+    border-radius: 1px;
+    background-color: #11AA23;
+    vertical-align: top;
+}
+footer ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+footer ul li a:visited{
+    color: inherit;
+}
+footer small {
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 80px;
+}
