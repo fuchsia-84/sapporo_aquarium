@@ -368,6 +368,74 @@ header .toggle_btn span:nth-child(3) {
 .news {
     background-color: #B3DEE3;
 }
+.news .inner {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+.news .news_contents {
+    display: block;
+    width: 80%;
+    background: #ffffff;
+    padding: 200px 10%;
+    font-weight: 300;
+}
+.news .news_contents dl {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    background: #ffffff;
+    overflow: hidden;
+}
+.news .news_contents dl::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.news .news_contents dt {
+    display: block;
+    font-size: 24px;
+    line-height: 1.0em;
+    padding: 8px 18px;
+    color: #ffffff;
+    background-color: #26AFD1;
+    border-radius: 1.0em;
+    float: left;
+    clear: left;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.news .news_contents dd {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 1.5em;
+    height: 44px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    border-bottom: 1px solid #333333;
+}
+.news_contents dt:last-of-type, .news_contents dd:last-of-type {
+    margin-bottom: 0;
+}
+.news .news_contents a {
+    display: block;
+    margin-top: 20px;
+    float: right;
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+.news .news_contents a:visited{
+    color: inherit;
+}
+.news .news_contents a::after {
+    display: block;
+    width: 100%;
+    content: '';
+    background: transparent;
+    height: 1.5em;
+    float: none;
+}
 
 /* Model */
 .model .wave {
