@@ -395,7 +395,7 @@ header .toggle_btn span:nth-child(3) {
     width: 33.3%;
     text-align: center;
 }
-.model .model_item img, .model .model_item h1 {
+.model .model_item img, .model .model_item a {
     display: block;
     width: calc(100% - 41px);
     max-width: 300px;
@@ -404,19 +404,24 @@ header .toggle_btn span:nth-child(3) {
     height: 200px;
     border-radius: 30px;
 }
-.model_item:nth-child(2) img, .model_item:nth-child(2) h1 {
+.model_item:nth-child(2) img, .model_item:nth-child(2) a {
     margin: 0 auto;
 }
-.model_item:nth-child(3) img, .model_item:nth-child(3) h1 {
+.model_item:nth-child(3) img, .model_item:nth-child(3) a {
     margin: 0 0 0 auto;
 }
-.model .model_item h1 {
+.model .model_item a {
     margin-top: 9px;
     font-size: 24px;
     line-height: 1.0em;
     font-weight: 600;
+    text-decoration: none;
+    color: inherit;
 }
-.model .model_item h1::before {
+.model .model_item a:visited {
+    color: inherit;
+}
+.model .model_item a::before {
     content: '';
     display: inline-block;
     background-image : radial-gradient(circle farthest-side, #119898, #119898 33.3%, transparent 33.3%, transparent);
@@ -426,7 +431,7 @@ header .toggle_btn span:nth-child(3) {
     width: 100%;
     height: 12px;
 }
-.model .model_item h1::after {
+.model .model_item a::after {
     content: '';
     display: inline-block;
     background-image : radial-gradient(circle farthest-side, #119898, #119898 33.3%, transparent 33.3%, transparent);
