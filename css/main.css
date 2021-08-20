@@ -199,8 +199,93 @@ header .toggle_btn span:nth-child(3) {
     top: 36px;
 }
 
+/* global menu */
 .global_menu {
-    display: none;
+    /*display: none;*/ /* toggle_btnクリックで切替*/
+    display: block;
+    width: 100%;
+    height: 100vh;
+    top: -80px;
+    left: 0;
+    background: #0C5772;
+    position: absolute;
+}
+.global_menu .inner {
+    position: relative;
+}
+.global_menu ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+.global_menu ul li a:visited {
+    color: inherit;
+}
+.info_basic {
+    display: inline-block;
+    width: 33.3%;
+    position: absolute;
+    top: 350px;
+}
+.info_basic h1, .info_basic dl {
+    float: left;
+}
+.info_basic h1 {
+    display: block;
+    font-size: 36px;
+    line-height: 1.0em;
+    margin-bottom: 41px;
+}
+.info_basic dl {
+    font-size: 18px;
+    line-height: 1.33em;
+}
+.info_basic dl dd {
+    margin-bottom: 10px;
+}
+.info_ticket {
+    display: flex;
+    width: 66.7%;
+    position: absolute;
+    top: 300px;
+    right: 0;
+}
+.info_ticket li {
+    width: 50%;
+}
+.info_ticket li a {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.0em;
+    padding: 26px 30px;
+    border: 5px solid #ffffff;
+    text-align: center;
+}
+.info_menu {
+    display: flex;
+    width: 66.7%;
+    position: absolute;
+    top: 410px;
+    right: 0;
+}
+.info_menu .info_menu_l, .info_menu .info_menu_r {
+    display: inline-block;
+    width: 50%;
+}
+.info_menu div {
+    margin-bottom: 40px;
+}
+.info_menu h2 {
+    margin-left: 1.0em;
+    margin-bottom: 10px;
+}
+.info_menu a {
+    font-size: 12px;
+    line-height: 1.5em;
+    margin-left: 2.0em;
+}
+.info_menu .info_menu_r .h_link {
+    font-size: 24px;
+    margin-left: 1.0em;
 }
 
 /* top */
