@@ -54,6 +54,25 @@
     width: 100%;
     height: 200px;
 }
+/*show section animation*/
+.show_section {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(80px);
+    transition: all 1s;
+}
+.show_section.is-show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+@media screen and (max-width: 991px) {
+    .show_section {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(80px);
+    }
+}
 .wrapper {
     overflow: hidden;
 }
@@ -565,7 +584,8 @@ header .toggle_btn.open span:nth-child(3) {
 
 /* Model */
 .model .wave {
-    background: #B3DEE3;
+    background: #B3DEE3
+    ;
 }
 .model .wave::after {
     background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201024%20200%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill-rule%3Aevenodd%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC_2%22%20data-name%3D%22%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%202%22%3E%3Cg%20id%3D%22%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC_1-2%22%20data-name%3D%22%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%201%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20class%3D%22cls-1%22%20d%3D%22M0%2C0V199.89a115.28%2C115.28%2C0%2C0%2C0%2C25.64-1.74c49.46-9%2C103.51-56.81%2C160.93-48.69%2C59%2C8.35%2C89.49%2C39.15%2C145.27%2C48.69%2C73.08%2C12.51%2C117.73-45.09%2C188-48.69%2C65.11-3.33%2C100.26%2C40.12%2C158.09%2C48.69C744.66%2C208%2C793%2C159.3%2C848.82%2C150.6c79.76-12.44%2C107%2C46.53%2C175.18%2C49V0Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')

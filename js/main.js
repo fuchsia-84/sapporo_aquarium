@@ -41,5 +41,52 @@ $(function() {
         return false;
 
      });
+
+     // Show Section
+     show_section_animation();
+     window.addEventListener('scroll', show_section_animation);
+
+
+     /**
+      ** 到達したら要素を表示させる
+      */
+    function show_section_animation() {
+        var sections = document.getElementsByClassName('show_section');
+        if(!sections) return; // 要素がなかったら処理をキャンセル
+
+        var show_timing = 40; // タイミング調整用
+        var scroll_y = window.pageYOffset;
+        var window_height = window.innerHeight;
+
+        var $body = $('body')
+        
+        for ( var i=0; i<sections.length; i++ ) {
+            var section_ClientRect = sections[i].getBoundingClientRect();
+            var section_y = scroll_y + section_ClientRect.top;
+
+            if ( i > 0 ) {
+                var $pre_section = $(sections[i-1]);
+                var pre_bg = $pre_section.css('background-color'); // 前のセクションの背景色を覚えておく
+
+            } else { // 最初のセクションに戻ったらbody背景を初期化する
+                if( scroll_y > section_y ) {
+                    $body.css('background-color', '#ffffff');
+                }
+            }
+            if ( scroll_y + window_height - show_timing > section_y) { // セクション位置より下にスクロール
+
+                sections[i].classList.add('is-show'); // セクションを表示する
+
+                // 波SVGの上余白で見えるbody背景色を前セクションの背景色にする
+                if ( i > 0 ) {
+                    $body.css('background-color', pre_bg);
+                }
+
+            } else if ( scroll_y + window_height < section_y ) { // セクション位置より上にスクロール
+
+                sections[i].classList.remove('is-show'); // セクションを非表示にする
+            }
+        }
+    }
     
 });
