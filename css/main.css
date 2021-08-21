@@ -846,6 +846,23 @@ footer {
 footer .inner {
     padding-top: 100px;
     padding-bottom: 150px;
+    position: relative;
+}
+/* page top button */
+footer .page_top_btn {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    background: #11AA23;
+    text-align: center;
+
+    font-size: 18px;
+    line-height: 1.0em;
+    font-weight: 300;
+    padding: 6px 18px;
 }
 footer div {
     display: flex;
