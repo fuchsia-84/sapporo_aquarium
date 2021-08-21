@@ -72,6 +72,7 @@ header {
     top: 80px;
     z-index: 1000;
     color: #ffffff;
+    transition: all 0.5s 0s ease;
 }
 header .logo {
     display: block;
@@ -201,6 +202,11 @@ header .toggle_btn span:nth-child(2) {
 }
 header .toggle_btn span:nth-child(3) {
     top: 36px;
+}
+/* header fixed */
+header.fixed {
+    background-color: #119898;
+    top: 0;
 }
 
 /* global menu */
