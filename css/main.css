@@ -54,6 +54,9 @@
     width: 100%;
     height: 200px;
 }
+.wrapper {
+    overflow: hidden;
+}
 
 body {
     font-family: 'ヒラギノ角ゴ Pro', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
