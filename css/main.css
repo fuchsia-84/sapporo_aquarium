@@ -116,7 +116,7 @@ header .tab_menu li {
 }
 header .tab_menu li#language {
     cursor: default;
-    /*margin-right: -129px;*/   /*tri_btnクリックで切替*/
+    margin-right: -129px;
 }
 header .tab_menu li:last-of-type {
     margin-right: 0;
@@ -128,7 +128,9 @@ header .tab_menu li i {
 header .tab_menu li:first-of-type i#lang_btn {
     cursor: pointer;
     width: 24px;
-    /*transform: rotate(180deg);*/  /*tri_btnクリックで切替*/
+}
+header .tab_menu li:first-of-type i#lang_btn.open {
+    transform: rotate(180deg);
 }
 header .tab_menu li a {
     text-decoration: none;
@@ -139,10 +141,15 @@ header .tab_menu li a:visited {
 }
 
 header .lang_menu {
-    display: none;  /*tri_btnクリックで切替*/
-    /*display: block;*/
+    visibility: hidden;
+    opacity: 0.0;
     list-style: none;
     margin-top: 10px;
+    transition: all 0.5s 0s ease;
+}
+header .lang_menu.open {
+    visibility: visible;
+    opacity: 1.0;
 }
 header .lang_menu li {
     display: inline-block;
