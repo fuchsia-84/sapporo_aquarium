@@ -443,10 +443,15 @@ header .toggle_btn span:nth-child(3) {
     width: 100%;
     height: 12px;
 }
-.recommend .recommend_item div h2 {
+.recommend .recommend_item div a {
+    text-decoration: none;
+    color: inherit;
     font-size: 24px;
     line-height: 1.5em;
     margin-top: 8px;
+}
+.recommend .recommend_item div a:visited {
+    color: inherit;
 }
 
 /* News */
