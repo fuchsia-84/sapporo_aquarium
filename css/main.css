@@ -905,6 +905,9 @@ footer ul li::after {
     background-color: #11AA23;
     vertical-align: top;
 }
+footer ul li:last-of-type::after {
+    display: none;
+}
 footer ul li a {
     text-decoration: none;
     color: inherit;
