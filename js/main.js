@@ -1,6 +1,9 @@
 $(function() {
     var $header = $('#header');
+    var $global_menu = $('.global_menu');
     var $top = $('#top');
+    var $toggle = $('.toggle_btn');
+
     var fixed_header_position = $top.height() - $header.outerHeight(true);
     
     // Header Fixed
@@ -11,4 +14,11 @@ $(function() {
             $header.removeClass('fixed');
         }
     });
+
+    // Global Menu Open
+    $toggle.click(function(){
+        $toggle.toggleClass('open');
+        $global_menu.toggleClass('open');
+    });
+    
 });
