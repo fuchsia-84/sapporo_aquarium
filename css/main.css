@@ -151,6 +151,9 @@ header .tab_menu li:first-of-type i#lang_btn {
     cursor: pointer;
     width: 24px;
 }
+header .tab_menu li:first-of-type i#lang_btn:hover {
+    color: #333333;
+}
 header .tab_menu li:first-of-type i#lang_btn.open {
     transform: rotate(180deg);
 }
@@ -160,6 +163,12 @@ header .tab_menu li a {
 }
 header .tab_menu li a:visited {
     color: inherit;
+}
+header .tab_menu li:hover {
+    color: #333333;
+}
+header .tab_menu li:first-of-type:hover {
+    color: #ffffff;
 }
 
 header .lang_menu {
@@ -184,6 +193,9 @@ header .lang_menu li a {
     display: inline-block;
     text-decoration: none;
     color: inherit;
+}
+header .lang_menu li a:hover{
+    color: #333333;
 }
 header .lang_menu li p {
     display: inline-block;
@@ -275,6 +287,9 @@ header .toggle_btn.open span:nth-child(3) {
 .global_menu ul li a:visited {
     color: inherit;
 }
+.global_menu ul li a:hover {
+    color: #222222;
+}
 .info_basic {
     display: inline-block;
     width: 33.3%;
@@ -314,6 +329,12 @@ header .toggle_btn.open span:nth-child(3) {
     padding: 26px 30px;
     border: 5px solid #ffffff;
     text-align: center;
+}
+.info_ticket li a:visited {
+    color: inherit;
+}
+.info_ticket li a:hover {
+    border: 5px solid #222222;
 }
 .info_menu {
     display: flex;
@@ -502,6 +523,9 @@ header .toggle_btn.open span:nth-child(3) {
 .recommend .recommend_item div a:visited {
     color: inherit;
 }
+.recommend .recommend_item div a:hover {
+    color: #999999;
+}
 
 /* News */
 .news .wave {
@@ -570,8 +594,11 @@ header .toggle_btn.open span:nth-child(3) {
     font-size: 24px;
     line-height: 1.5em;
 }
-.news .news_contents a:visited{
+.news .news_contents a:visited {
     color: inherit;
+}
+.news .news_contents a:hover {
+    color: #999999;
 }
 .news .news_contents a::after {
     display: block;
@@ -634,6 +661,9 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .model .model_item a:visited {
     color: inherit;
+}
+.model .model_item a:hover {
+    color: #999999;
 }
 .model .model_item a::before {
     content: '';
@@ -718,9 +748,13 @@ header .toggle_btn.open span:nth-child(3) {
     font-weight: 600;
     position: absolute;
     padding: 206px 0 70px;
+    border-radius: 30px;
 }
 .info .info_item div a:visited {
     color: inherit;
+}
+.info .info_item div a:hover {
+    background-color: rgb(255, 255, 255, 0.25);
 }
 
 /* Access */
@@ -786,6 +820,24 @@ header .toggle_btn.open span:nth-child(3) {
     color: #ffffff;
     background-color: #26AFD1;
     border-radius: 2.0em;
+    position: relative;
+}
+.access_contents_r a::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 46px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 2.0em;
+}
+.access_contents_r a:visited {
+    color: #ffffff;
+}
+.access_contents_r a:hover::after{
+    display: block;
 }
 
 /* Charge */
@@ -846,6 +898,7 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .charge .group_btn {
     display: block;
+    position: relative;
     width: 400px;
     text-align: center;
     font-size: 24px;
@@ -861,6 +914,20 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .charge .group_btn:visited {
     color: #ffffff;
+}
+.charge .group_btn::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 1.0em;
+}
+.charge .group_btn:hover::after {
+    display: block;
 }
 /* banners */
 .charge .charge_footer {
@@ -881,12 +948,26 @@ header .toggle_btn.open span:nth-child(3) {
     height: 100px;
     background: #707070;
     text-decoration: none;
+    position: relative;
 }
 .banner_item:nth-child(2) a {
     margin: 0 auto;
 }
 .banner_item:nth-child(3) a {
     margin: 0 0 0 auto;
+}
+.banners .banner_item a::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+.banners .banner_item a:hover::after {
+    display: block;
 }
 
 /* footer */
@@ -918,6 +999,19 @@ footer .page_top_btn {
     line-height: 1.0em;
     font-weight: 300;
     padding: 6px 18px;
+}
+footer .page_top_btn::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+footer .page_top_btn:hover::after {
+    display: block;
 }
 footer div {
     display: flex;
@@ -967,8 +1061,11 @@ footer ul li a {
     text-decoration: none;
     color: inherit;
 }
-footer ul li a:visited{
+footer ul li a:visited {
     color: inherit;
+}
+footer ul li a:hover {
+    color: #222222;
 }
 footer small {
     display: block;
