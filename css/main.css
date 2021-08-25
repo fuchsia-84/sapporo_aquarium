@@ -135,6 +135,7 @@ header .tab_menu li {
     font-size: 18px;
     line-height: 1.3em;
     vertical-align: top;
+    white-space: nowrap;
 }
 header .tab_menu li#language {
     cursor: default;
