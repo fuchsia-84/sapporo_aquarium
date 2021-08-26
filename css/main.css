@@ -17,6 +17,7 @@
     width: calc(100% - 60px);
     padding: 0 30px;
 }
+
 .alphanumeric_h {
     font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
@@ -81,7 +82,6 @@ body {
     font-family: 'ヒラギノ角ゴ Pro', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
     font-weight: 600;
     color: #333333;
-    min-width: 1200px; /* for pc */
 }
 
 /* header */
@@ -100,6 +100,22 @@ header.fixed {
     background-color: #119898;
     top: 0;
 }
+@media only screen and (max-width: 1025px) {
+    header {
+        height: 110px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        height: 90px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header {
+        height: 60px;
+    }
+}
+/* header - logo */
 header .logo {
     display: block;
     position: absolute;
@@ -119,6 +135,36 @@ header .logo p {
     line-height: 1.0em;
     vertical-align: middle;
 }
+@media only screen and (max-width: 1025px) {
+    header .logo #logo_svg {
+        width: 80px;
+        margin-right: 10px;
+    }
+    header .logo p {
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header .logo #logo_svg {
+        width: 60px;
+        margin-right: 5px;
+    }
+    header .logo p {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header .logo #logo_svg {
+        width: 40px;
+        margin: 0;
+        top: 0;
+    }
+    header .logo p {
+        display: none;
+    }
+}
+
+/* header - tab menu */
 header .tab_menu {
     display: block;
     position: absolute;
@@ -171,7 +217,44 @@ header .tab_menu li:hover {
 header .tab_menu li:first-of-type:hover {
     color: #ffffff;
 }
-
+@media only screen and (max-width: 1025px) {
+    header .tab_menu {
+        right: 100px;
+    }
+    header .tab_menu li {
+        margin-right: 15px;
+        font-size: 16px;
+        line-height: 1.2em;
+    }
+    header .tab_menu li#language {
+        margin-right: -180px;
+    }
+    header .tab_menu li i {
+        margin-right: 3px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header .tab_menu {
+        right: 100px;
+    }
+    header .tab_menu li {
+        margin-right: 15px;
+        font-size: 16px;
+        line-height: 1.2em;
+    }
+    header .tab_menu li#language {
+        margin-right: -180px;
+    }
+    header .tab_menu li i {
+        margin-right: 3px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header .tab_menu {
+        bottom: -30px;
+    }
+}
+/* header - language menu */
 header .lang_menu {
     visibility: hidden;
     opacity: 0.0;
@@ -221,7 +304,7 @@ header .lang_menu li::after {
 header .lang_menu li:last-child::after {
     display: none;
 }
-
+/* header - toggle button */
 header .toggle_btn {
     display: block;
     width: 50px;
@@ -260,6 +343,38 @@ header .toggle_btn.open span:nth-child(2) {
 header .toggle_btn.open span:nth-child(3) {
     transform: rotate(-45deg);
     top: 50%;
+}
+@media only screen and (max-width: 1025px) {
+    header .toggle_btn {
+        width: 40px;
+        top: 32px;
+    }
+    header .toggle_btn span:nth-child(1) {
+        top: 0px;
+    }
+    header .toggle_btn span:nth-child(2) {
+        top: 15px;
+    }
+    header .toggle_btn span:nth-child(3) {
+        top: 30px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header .toggle_btn {
+        width: 25px;
+    }
+    header .toggle_btn span:nth-child(1) {
+        top: 0px;
+    }
+    header .toggle_btn span:nth-child(2) {
+        top: 10px;
+    }
+    header .toggle_btn span:nth-child(3) {
+        top: 20px;
+    }
+    header .toggle_btn {
+        top: 26px
+    }
 }
 
 /* global menu */
