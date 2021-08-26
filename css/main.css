@@ -510,6 +510,29 @@ header .toggle_btn.open span:nth-child(3) {
     font-size: 70px;
     line-height: 1.43em;
 }
+@media only screen and (max-width: 1025px) {
+    .top .top_title p {
+        font-size: 18px;
+        line-height: 1.33em;
+    }
+    .top .top_title h1 {
+        font-size: 44px;
+        line-height: 1.1em;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .top {
+        margin: 0;
+    }
+    .top .top_title p {
+        font-size: 18px;
+        line-height: 1.33em;
+    }
+    .top .top_title h1 {
+        font-size: 24px;
+        line-height: 1.5em;
+    }
+}
 /* top - scroll arrow */
 .scroll_arrow {
     display: block;
