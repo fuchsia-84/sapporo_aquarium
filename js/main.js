@@ -5,6 +5,9 @@ $(function() {
     var $toggle = $('.toggle_btn');
     var $lang_btn = $('#lang_btn');
     var $lang_menu = $('.lang_menu');
+    var $today_time = $('.today_time');
+    var $today_ticket = $('.today_ticket');
+    var $today_schedule = $('.today_schedule');
 
     var fixed_header_position = $top.height() - $header.outerHeight(true);
     
@@ -28,6 +31,31 @@ $(function() {
         $lang_btn.toggleClass('open');
         $lang_menu.toggleClass('open');
     });
+
+    // Today Open (for tab/sp)
+    if (window.matchMedia('(max-width: 756px)').matches) {
+        $today_time.click(function() {
+            $today_time.toggleClass('open');
+            if ($today_ticket.hasClass('open') || $today_schedule.hasClass('open')) {
+                $today_ticket.removeClass('open');
+                $today_schedule.removeClass('open');
+            }
+        });
+        $today_ticket.click(function() {
+            $today_ticket.toggleClass('open');
+            if ($today_time.hasClass('open') || $today_schedule.hasClass('open')) {
+                $today_time.removeClass('open');
+                $today_schedule.removeClass('open');
+            }
+        });
+        $today_schedule.click(function() {
+            $today_schedule.toggleClass('open');
+            if ($today_time.hasClass('open') || $today_ticket.hasClass('open')) {
+                $today_time.removeClass('open');
+                $today_ticket.removeClass('open');
+            }
+        });
+    }
 
     // #Link Smooth Scroll
     $('a[href^="#"]').click(function() {

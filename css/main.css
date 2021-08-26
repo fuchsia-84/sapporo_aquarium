@@ -55,6 +55,15 @@
     width: 100%;
     height: 200px;
 }
+.text_sp {
+    display: inline;
+}
+@media only screen and (max-width: 756px) {
+    .text_sp {
+        display: none;
+    }
+}
+
 /*show section animation*/
 .show_section {
     opacity: 0;
@@ -647,7 +656,7 @@ header .toggle_btn.open span:nth-child(3) {
 .today a i {
     margin-left: 12px;
 }
-.today span {
+.today .h1_border {
     display: block;
     width: calc(100% - 30px);
     height: 2px;
@@ -674,6 +683,137 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .today_schedule span {
     width: 100%;
+}
+@media only screen and (max-width: 1025px) {
+    .today {
+        height: 120px;
+        font-size: 18px;
+        line-height: 1.0em;
+    }
+    .today .wide_inner {
+        width: 100%;
+        padding: 0;
+    }
+    .today_time, .today_ticket {
+        width: 25%;
+    }
+    .today_schedule {
+        width: 50%;
+    }
+    .today h1 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 0.5em;
+    }
+    .today h1 i {
+        margin-right: 0.5em;
+    }
+    .today p, .today a {
+        margin-left: 1.0em;
+    }
+    .today a i {
+        margin-left: 1.0em;
+    }
+    .today span {
+        width: calc(100% - 15px);
+        margin-bottom: 1.0em;
+    }
+    .today_time, .today_ticket, .today_schedule {
+        height: 120px;
+    }
+    .today_schedule span {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .today .wide_inner {
+        padding: 0;
+        margin: 0;
+    }
+    .today {
+        height: 80px;
+        margin: 0;
+        padding: 0;
+
+        font-size: 16px;
+        line-height: 1.0em;
+        background: #01275a;
+        color: #96a6bb;
+    }
+    .today_time, .today_ticket, .today_schedule {
+        height: 80px;
+    }
+    .today h1 {
+        margin: 0;
+        padding: 0;
+
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 0.75em;
+        height: 1.0em;
+        line-height: 1.0em;
+        cursor: pointer;
+        transition: all 1.0s;
+    }
+    .today .h1_border {
+        display: none;
+    }
+    .today_time.open h1, .today_ticket.open h1, .today_schedule.open h1 {
+        color: #01275a;
+        background: #96a6bb;
+    }
+    .today p, .today_ticket p, .today_schedule p {
+        visibility: hidden;
+        margin: 0;
+        padding: 0;
+
+        padding-top: 2.0em;
+        padding-bottom: 2.0em;
+        padding-left: 0.5em;
+        margin-top: -5.0em;
+
+        height: 1.0em;
+        color: #01275a;
+        background: #96a6bb;
+        opacity: 0.0;
+        transition: all 1.0s;
+    }
+    .today_time.open p, .today_ticket.open p, .today_schedule.open p {
+        visibility: visible;
+        margin-top: -10.0em;
+        opacity: 1.0;
+    }
+    .today span {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .today {
+        font-size: 12px;
+        height: 3.0em;
+    }
+    .today_time, .today_ticket, .today_schedule {
+        height: 3.0em;
+    }
+    .today h1 {
+        padding-top: 1.0em;
+        padding-bottom: 1.0em;
+        padding-left: 0.25em;
+        height: 1.0em;
+        line-height: 1.0em;
+        cursor: pointer;
+    }
+    .today p , .today_ticket p, .today_schedule p {
+        height: 1.0em;
+        padding-top: 1.0em;
+        padding-bottom: 1.0em;
+    }
+    .today_time.open p, .today_ticket.open p, .today_schedule.open p {
+        margin-top: -6.0em;
+    }
+    .today a i {
+        margin-left: 0.4em;
+    }
 }
 
 /* Recommend */
