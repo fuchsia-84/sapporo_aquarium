@@ -178,8 +178,6 @@ header .tab_menu li {
     margin-right: 20px;
     margin-bottom: 1px;
     cursor: pointer;
-    font-size: 18px;
-    line-height: 1.3em;
     vertical-align: top;
     white-space: nowrap;
 }
@@ -251,7 +249,14 @@ header .tab_menu li:first-of-type:hover {
 }
 @media only screen and (max-width: 600px) {
     header .tab_menu {
-        bottom: -20px;
+        right: 80px;
+        bottom: -70px;
+    }
+    header .tab_menu li a span {
+        display: none;
+    }
+    header .tab_menu li#language {
+        margin-right: -50px;
     }
 }
 /* header - language menu */
@@ -304,6 +309,31 @@ header .lang_menu li::after {
 header .lang_menu li:last-child::after {
     display: none;
 }
+@media only screen and (max-width: 600px) {
+    header .lang_menu {
+        margin-top: 20px;
+    }
+    header .lang_menu li {
+        display: block;
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.0em;
+    }
+    header .lang_menu li p {
+        margin: 2px auto;
+    }
+    header .lang_menu li .alphanumeric_h {
+        margin-left: 20px;
+    }
+    header .lang_menu li::after {
+        visibility: hidden;
+    }
+    header .lang_menu.open {
+        background:rgb(255, 255, 255, 0.65);
+        color: #0C5772;
+    }
+}
+
 /* header - toggle button */
 header .toggle_btn {
     display: block;
