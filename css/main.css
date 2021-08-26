@@ -251,7 +251,7 @@ header .tab_menu li:first-of-type:hover {
 }
 @media only screen and (max-width: 600px) {
     header .tab_menu {
-        bottom: -30px;
+        bottom: -20px;
     }
 }
 /* header - language menu */
