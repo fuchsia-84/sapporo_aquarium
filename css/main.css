@@ -836,30 +836,42 @@ header .toggle_btn.open span:nth-child(3) {
     width: 33.3%;
     text-align: center;
 }
-.recommend .recommend_item img, .recommend .recommend_item div {
+.recommend .recommend_item .image, .recommend .recommend_item .text {
     display: block;
     width: calc(100% - 41px);
     max-width: 300px;
 }
-.recommend .recommend_item img {
+.recommend .recommend_item .image {
     height: 200px;
     border-radius: 30px;
+    background-position: center;
+    background-size: cover;
 }
-.recommend_item:nth-child(2) img, .recommend_item:nth-child(2) div {
+.recommend_item:nth-child(1) .image {
+    background-image: url(../img/recommend_1.jpg);
+}
+.recommend_item:nth-child(2) .image {
+    background-image: url(../img/recommend_2.jpg);
+}
+.recommend_item:nth-child(3) .image {
+    background-image: url(../img/recommend_3.jpg);
+}
+
+.recommend_item:nth-child(2) .image, .recommend_item:nth-child(2) .text {
     margin: 0 auto;
 }
-.recommend_item:nth-child(3) img, .recommend_item:nth-child(3) div {
+.recommend_item:nth-child(3) .image, .recommend_item:nth-child(3) .text {
     margin: 0 0 0 auto;
 }
-.recommend .recommend_item div {
+.recommend .recommend_item .text {
     margin-top: 10px;
 }
-.recommend .recommend_item div h1 {
+.recommend .recommend_item .text h1 {
     font-size: 18px;
     line-height: 1.33em;
     font-weight: 300;
 }
-.recommend .recommend_item div h1::after {
+.recommend .recommend_item .text h1::after {
     content: '';
     display: inline-block;
     background-image : radial-gradient(circle farthest-side, #119898, #119898 33.3%, transparent 33.3%, transparent);
@@ -869,18 +881,116 @@ header .toggle_btn.open span:nth-child(3) {
     width: 100%;
     height: 12px;
 }
-.recommend .recommend_item div a {
+.recommend .recommend_item .text a {
     text-decoration: none;
     color: inherit;
     font-size: 24px;
     line-height: 1.5em;
     margin-top: 8px;
+    white-space: nowrap;
 }
-.recommend .recommend_item div a:visited {
+.recommend .recommend_item .text a:visited {
     color: inherit;
 }
-.recommend .recommend_item div a:hover {
+.recommend .recommend_item .text a:hover {
     color: #999999;
+}
+@media only screen and (max-width: 1025px) {
+    .recommend .recommend_item .image, .recommend .recommend_item .text {
+        display: block;
+        width: calc(100% - 1.0em);
+    }
+    .recommend .recommend_item .image {
+        height: auto;
+        min-height: 200px;
+        border-radius: 30px;
+    }
+    .recommend .recommend_item .text h1 {
+        font-size: 18px;
+        line-height: 1.33em;
+        font-weight: 300;
+    }
+    .recommend .recommend_item .text a {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .recommend .inner {
+        width: 100%;
+    }
+    .recommend .recommend_contents {
+        display: block;
+    }
+    .recommend .recommend_item {
+        width: 100%;
+        position: relative;
+    }
+    .recommend .recommend_item .image, .recommend .recommend_item .text {
+        width: 100%;
+        max-width: 100%;
+    }
+    .recommend .recommend_item .image {
+        border-radius: 0;
+    }
+    .recommend .recommend_item .text {
+        height: 200px;
+        border-radius: 0;
+    }
+    .recommend .recommend_item .text {
+        display: block;
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        color: #ffffff;
+    }
+    .recommend_item:nth-child(2) .image, .recommend_item:nth-child(2) .text {
+        margin: 0;
+    }
+    .recommend_item:nth-child(3) .image, .recommend_item:nth-child(3) .text {
+        margin: 0;
+    }
+    .recommend .recommend_item .text h1 {
+        display: block;
+        width: 60%;
+        position: absolute;
+        left: 20%;
+        bottom: 3.0em;
+    }
+    .recommend .recommend_item .text h1::after {
+        background-image : radial-gradient(circle farthest-side, #ffffff, #ffffff 33.3%, transparent 33.3%, transparent);
+    }
+    .recommend .recommend_item .text a {
+        text-decoration: none;
+        margin: 0;
+
+        display: block;
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1.0em;
+
+        font-size: 18px;
+        line-height: 1.0em;
+
+        padding: calc(200px - 3.0em) 0 2.0em;
+        white-space: nowrap;
+    }
+    .recommend .recommend_item .text a:hover {
+        color: #01275a;
+        background-color: rgba(255, 255, 255, 0.25);
+    }
+}
+@media only screen and (max-width: 756px) {
+    .recommend .recommend_item .text h1 {
+        font-size: 16px;
+    }
+    .recommend .recommend_item .text a {
+        font-size: 16px;
+    }
 }
 
 /* News */
@@ -1319,6 +1429,7 @@ header .toggle_btn.open span:nth-child(3) {
         width: 100%;
     }
 }
+
 /* Charge */
 .charge .wave {
     background: #ffffff;
