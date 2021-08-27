@@ -427,6 +427,7 @@ header .toggle_btn.open span:nth-child(3) {
     position: absolute;
     z-index: 100;
     transition: all 1.0s 0s ease;
+    overflow-y: scroll;
 }
 .global_menu.open {
     visibility: visible;
@@ -453,19 +454,21 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .info_basic h1, .info_basic dl {
     float: left;
+    clear: left;
 }
 .info_basic h1 {
     display: block;
     font-size: 36px;
     line-height: 1.0em;
-    margin-bottom: 41px;
+    margin-bottom: 1.33em;
+    white-space: nowrap;
 }
 .info_basic dl {
     font-size: 18px;
     line-height: 1.33em;
 }
 .info_basic dl dd {
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 .info_ticket {
     display: flex;
@@ -476,12 +479,13 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .info_ticket li {
     width: 50%;
+    white-space: nowrap;
 }
 .info_ticket li a {
     width: 50%;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.0em;
-    padding: 26px 30px;
+    padding: 1.0em 0.2em;
     border: 5px solid #ffffff;
     text-align: center;
 }
@@ -503,20 +507,130 @@ header .toggle_btn.open span:nth-child(3) {
     width: 50%;
 }
 .info_menu div {
-    margin-bottom: 40px;
+    margin-bottom: 3.0em;
 }
 .info_menu h2 {
+    font-size:  24px;
     margin-left: 1.0em;
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
 }
 .info_menu a {
-    font-size: 12px;
+    font-size:  18px;
     line-height: 1.5em;
     margin-left: 2.0em;
 }
 .info_menu .info_menu_r .h_link {
     font-size: 24px;
     margin-left: 1.0em;
+}
+@media only screen and (max-width: 1025px) {
+    .info_ticket li a {
+        font-size: 18px;
+        padding: 1.0em 0.2em;
+        border: 4px solid #ffffff;
+    }
+    .info_basic h1 {
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .global_menu {
+        min-height: 900px;
+    }
+    .info_ticket {
+        display: block;
+        width: 80%;
+        left: 10%;
+        top: 180px;
+    }
+    .info_ticket li {
+        display: block;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1.0em;
+    }
+    .info_ticket li a {
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        border: 3px solid #ffffff;
+    }
+    .info_ticket li a:hover {
+        border: 3px solid #222222;
+    }
+    .info_basic {
+        display: block;
+        width: 80%;
+        position: absolute;
+        top: 360px;
+        left: 10%;
+    }
+    .info_basic h1 {
+        display: block;
+    }
+    .info_basic dl {
+        display: flex;
+        font-size: 16px;
+        float: none;
+    }
+    .info_basic dl dt {
+        width: 10%;
+    }
+    .info_basic dl dd {
+        width: 40%;
+    }
+    .info_menu {
+        width: 80%;
+        position: absolute;
+        top: 500px;
+        left: 10%
+    }
+    .info_menu div {
+        margin-bottom: 1.5em;
+    }
+    .info_menu h2 {
+        font-size:  18px;
+        margin-left: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .info_menu a {
+        font-size:  16px;
+        line-height: 1.5em;
+        margin-left: 1.0em;
+    }
+    .info_menu .info_menu_r .h_link {
+        font-size: 16px;
+        margin-left: 0.5em;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .global_menu {
+        min-height: 100vh;
+    }
+    .info_basic {
+        display: none;
+    }
+    .info_ticket li a {
+        font-size: 12px;
+    }
+    .info_menu {
+        width: 90%;
+        left: 5%;
+        top: 360px;
+    }
+    .info_menu div {
+        margin-bottom: 0.8em;
+    }
+    .info_menu h2 {
+        font-size:  12px;
+    }
+    .info_menu a {
+        font-size:  12px;
+    }
+    .info_menu .info_menu_r .h_link {
+        font-size: 12px;
+    }
+    
 }
 
 /* top */
