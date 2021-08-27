@@ -8,6 +8,7 @@ $(function() {
     var $today_time = $('.today_time');
     var $today_ticket = $('.today_ticket');
     var $today_schedule = $('.today_schedule');
+    var $page_top_btn = $('.page_top_btn');
 
     var fixed_header_position = $top.height() - $header.outerHeight(true);
     
@@ -15,8 +16,11 @@ $(function() {
     $(window).scroll(function() {
         if ($(window).scrollTop() > fixed_header_position) { 
             $header.addClass('fixed');
+            $page_top_btn.addClass('fixed');
+
         } else {
             $header.removeClass('fixed');
+            $page_top_btn.removeClass('fixed');
         }
     });
 
