@@ -901,12 +901,13 @@ header .toggle_btn.open span:nth-child(3) {
     display: block;
     width: 80%;
     background: #ffffff;
+    font-size: 24px;
     padding: 200px 10%;
     font-weight: 300;
 }
 .news .news_contents dl {
     display: block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     background: #ffffff;
     overflow: hidden;
@@ -918,24 +919,22 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .news .news_contents dt {
     display: block;
-    font-size: 24px;
     line-height: 1.0em;
-    padding: 8px 18px;
+    padding: 0.33em 0.75em;
     color: #ffffff;
     background-color: #26AFD1;
     border-radius: 1.0em;
     float: left;
     clear: left;
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 0.8em;
 }
 .news .news_contents dd {
     display: inline-block;
-    font-size: 24px;
     line-height: 1.5em;
-    height: 44px;
-    margin-bottom: 20px;
-    margin-left: 50px;
+    height: 2.5em;
+    margin-bottom: 0.8em;
+    margin-left: 3.0em;
     border-bottom: 1px solid #333333;
 }
 .news_contents dt:last-of-type, .news_contents dd:last-of-type {
@@ -943,11 +942,10 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .news .news_contents a {
     display: block;
-    margin-top: 20px;
+    margin-top: 0.8em;
     float: right;
     text-decoration: none;
     color: inherit;
-    font-size: 24px;
     line-height: 1.5em;
 }
 .news .news_contents a:visited {
@@ -963,6 +961,51 @@ header .toggle_btn.open span:nth-child(3) {
     background: transparent;
     height: 1.5em;
     float: none;
+}
+@media only screen and (max-width: 1025px) {
+    .news .news_contents {
+        width: 90%;
+        padding: 100px 5%;
+        font-size: 18px;
+    }
+    .news .news_contents dt {
+        margin-bottom: 1.0em;
+    }
+    .news .news_contents a {
+        margin-top: 1.5em;
+        line-height: 2.0em;
+    }
+    .news .news_contents a::after {
+        height: 1.0em;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .news .news_contents {
+        width: 95%;
+        padding: 80px 2.5%;
+        font-size: 16px;
+    }
+    .news .news_contents dt {
+        font-size: 12px;
+        display: inline-block;
+        margin-bottom: 0.5em;
+        float: none;
+        clear: none;
+    }
+    .news .news_contents dd {
+        display: block;
+        font-size: 16px;
+        margin-bottom: 1.5em;
+        margin-left: 0;
+    }
+    .news .news_contents a {
+        font-size: 12px;
+        margin-top: 1.0em;
+        line-height: 1.0em;
+    }
+    .news .news_contents a::after {
+        height: 1.0em;
+    }
 }
 
 /* Model */
