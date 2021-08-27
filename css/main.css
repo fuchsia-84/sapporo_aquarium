@@ -1120,6 +1120,7 @@ header .toggle_btn.open span:nth-child(3) {
     text-align: center;
     color: #ffffff;
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 .info .info_item:nth-child(1) div::after {
@@ -1154,6 +1155,51 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .info .info_item div a:hover {
     background-color: rgb(255, 255, 255, 0.25);
+}
+@media only screen and (max-width: 1025px) {
+    .info .info_item div {
+        width: calc(100% - 30px);
+        height: 250px;
+    }
+    .info .info_item:nth-child(1) div::after {
+        height: 250px;
+    }
+    .info .info_item div a {
+        font-size: 18px;
+        padding: 182px 0 50px;
+    }
+}
+@media only screen and (max-width: 756px) {
+    .info .inner {
+        width: 100%;
+    }
+    .info .info_contents {
+        display: block;
+    }
+    .info .info_item {
+        width: 100%;
+    }
+    .info .info_item div {
+        width: 100%;
+        max-width: 100%;
+        height: 150px;
+        border-radius: 0;
+        text-align: center;
+    }
+    .info .info_item:nth-child(1) div::after {
+        width: 100%;
+        height: 150px;
+        background-color: rgb(0, 0, 0, 0.25);
+        border-radius: 0;
+    }
+    .info .info_item div a {
+        font-size: 18px;
+        line-height: 1.0em;
+        font-weight: 600;
+        position: absolute;
+        padding: calc(150px - 3.0em) 0 2.0em;
+        border-radius: 0;
+    }
 }
 
 /* Access */
