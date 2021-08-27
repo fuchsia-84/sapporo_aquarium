@@ -58,7 +58,7 @@
 .text_sp {
     display: inline;
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .text_sp {
         display: none;
     }
@@ -74,7 +74,7 @@
 .br_sp {
     display: none;
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .br_sp {
         display: block;
     }
@@ -135,7 +135,7 @@ header.fixed {
         height: 90px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     header {
         height: 60px;
     }
@@ -178,7 +178,7 @@ header .logo p {
         font-size: 24px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     header .logo #logo_svg {
         width: 40px;
         margin: 0;
@@ -272,7 +272,7 @@ header .tab_menu li:first-of-type:hover {
         margin-right: 3px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     header .tab_menu {
         right: 80px;
         bottom: -70px;
@@ -282,6 +282,17 @@ header .tab_menu li:first-of-type:hover {
     }
     header .tab_menu li#language {
         margin-right: -50px;
+    }
+}
+@media only screen and (max-width: 300px) {
+    header .tab_menu {
+        right: 60px;
+    }
+    header .tab_menu li {
+        margin-right: 10px;
+    }
+    header .tab_menu li#language {
+        margin-right: -70px;
     }
 }
 /* header - language menu */
@@ -334,7 +345,7 @@ header .lang_menu li::after {
 header .lang_menu li:last-child::after {
     display: none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     header .lang_menu {
         margin-top: 20px;
     }
@@ -414,7 +425,7 @@ header .toggle_btn.open span:nth-child(3) {
         top: 30px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     header .toggle_btn {
         width: 25px;
     }
@@ -534,6 +545,7 @@ header .toggle_btn.open span:nth-child(3) {
     font-size:  18px;
     line-height: 1.5em;
     margin-left: 2.0em;
+    white-space: nowrap;
 }
 .info_menu .info_menu_r .h_link {
     font-size: 24px;
@@ -549,7 +561,7 @@ header .toggle_btn.open span:nth-child(3) {
         font-size: 24px;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .global_menu {
         min-height: 900px;
     }
@@ -689,7 +701,7 @@ header .toggle_btn.open span:nth-child(3) {
         line-height: 1.1em;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .top {
         margin: 0;
     }
@@ -774,6 +786,7 @@ header .toggle_btn.open span:nth-child(3) {
 }
 .today p, .today a {
     margin-left: 50px;
+    white-space: nowrap;
 }
 .today a {
     text-decoration: none;
@@ -855,7 +868,7 @@ header .toggle_btn.open span:nth-child(3) {
         width: 100%;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .today .wide_inner {
         padding: 0;
         margin: 0;
@@ -892,6 +905,9 @@ header .toggle_btn.open span:nth-child(3) {
         color: #01275a;
         background: #96a6bb;
     }
+    .today p {
+        text-align: center;
+    }
     .today p, .today_ticket p, .today_schedule p {
         visibility: hidden;
         margin: 0;
@@ -917,7 +933,7 @@ header .toggle_btn.open span:nth-child(3) {
         display: none;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .today {
         font-size: 12px;
         height: 3.0em;
@@ -943,6 +959,11 @@ header .toggle_btn.open span:nth-child(3) {
     }
     .today a i {
         margin-left: 0.4em;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .today h1 i {
+        margin-right: 0.2em;
     }
 }
 
@@ -1045,7 +1066,7 @@ header .toggle_btn.open span:nth-child(3) {
         margin-top: 5px;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .recommend .inner {
         width: 100%;
     }
@@ -1114,7 +1135,7 @@ header .toggle_btn.open span:nth-child(3) {
         background-color: rgba(255, 255, 255, 0.25);
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .recommend .recommend_item .text h1 {
         font-size: 16px;
     }
@@ -1219,7 +1240,7 @@ header .toggle_btn.open span:nth-child(3) {
         height: 1.0em;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .news .news_contents {
         width: 95%;
         padding: 80px 2.5%;
@@ -1361,7 +1382,7 @@ header .toggle_btn.open span:nth-child(3) {
         font-size: 18px;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .model .inner {
         width: 100%;
     }
@@ -1513,7 +1534,7 @@ header .toggle_btn.open span:nth-child(3) {
         padding: 182px 0 50px;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .info .inner {
         width: 100%;
     }
@@ -1638,7 +1659,7 @@ header .toggle_btn.open span:nth-child(3) {
         font-size: 18px;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .access .inner {
         width: 100%;
     }
@@ -1653,7 +1674,7 @@ header .toggle_btn.open span:nth-child(3) {
         font-size: 16px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
     .access .access_contents {
         display: block;
         width: calc(100% - 30px);
@@ -1777,7 +1798,7 @@ header .toggle_btn.open span:nth-child(3) {
         font-size: 18px;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .charge .inner {
         width: 100%;
     }
@@ -1861,7 +1882,7 @@ header .toggle_btn.open span:nth-child(3) {
         height: 80px;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     .charge .charge_footer {
         padding: 150px 0;
     }
@@ -2027,7 +2048,7 @@ footer small {
         font-size: 12px;
     }
 }
-@media only screen and (max-width: 756px) {
+@media only screen and (max-width: 768px) {
     footer {
         font-size: 16px;
         font-weight: 300;
