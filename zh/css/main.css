@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import url(./html5reset-1.6.1.css); /*reset css*/
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css); /*Chinese Fonts from Google*/
 
 /* global */
 .inner {
@@ -19,7 +20,7 @@
 }
 
 .alphanumeric_h {
-    font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+    font-family: 'cwTeXHei', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
 .section_title {
     display: block;
@@ -104,7 +105,7 @@
 }
 
 body {
-    font-family: Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+    font-family: 'cwTeXHei', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
     font-weight: 600;
     color: #333333;
 }
