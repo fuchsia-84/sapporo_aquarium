@@ -136,7 +136,7 @@ function initialize() {
         ],{name: 'Styled Map'});
     
     //マーカー用の画像
-    const marker_image = './img/map_icon.png';
+    const marker_image = '../img/map_icon.png';
   
     //マーカー
     let marker = new google.maps.Marker({
