@@ -27,17 +27,17 @@ Web上で配布された制作課題を元に、<u>**新しくできる水族館
 
 - <u>**レスポンシブ対応**</u>: PC版・タブレット版・SP版と、画面幅に対応してレイアウトが変化します。
 
-(画像)
+![sapporo_aquarium_all_icatch](https://user-images.githubusercontent.com/46129202/133736745-547c25c5-8f0b-4426-a0d2-ee2e82abc129.png)
 
 - <u>**言語切替機能**</u>: 言語選択メニューから、**英語・中国語(繁体)・韓国語・日本語**に切り替えることができます。
 
-(画像)
+![tab_menu_after](https://user-images.githubusercontent.com/46129202/133736162-199eed05-8a98-4bd8-96b6-7aa5f7cee52f.png)
 
-(画像)
+![sapporo_aquarium_global_icatch](https://user-images.githubusercontent.com/46129202/133736618-07af8b9b-0313-4983-90a9-c5e72c6498d0.png)
 
 ## 構成
 
-(画像)
+![Global_fix](https://user-images.githubusercontent.com/46129202/133736800-febaf862-eb73-4e72-84a8-40454fecad89.jpg)
 
 ## 開発環境
 
